@@ -1,0 +1,25 @@
+html{
+    text-align: center;
+    font-family: Calibri;
+    background: #0f111a;
+    color: #FFFFFF;
+}
+button, a{
+    background: #46111a;
+    color: #FFFFFF;
+    font-size: 18px;
+    border: 0;
+    margin: 2.3px;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+}
+button:hover, a:hover{
+    background: #89ddff;
+    color: #000000;
+}
+input{width: 350px;}
+
+p{font-size: 30px;}
