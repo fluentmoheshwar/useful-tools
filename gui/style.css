@@ -8,17 +8,18 @@ button, a{
     background: #46111a;
     color: #FFFFFF;
     font-size: 18px;
-    border: 0;
-    margin: 2.3px;
+    border: 1px solid #46111a;
+    border-radius: 5.5px;
+    margin: 5px;
+    padding : 6px;
     transition: 0.5s;
     cursor: pointer;
-    position: relative;
-    top: 15px;
     text-decoration: none;
 }
 button:hover, a:hover{
     background: #89ddff;
     color: #000000;
+    border: 1px solid #89ddff;
 }
 input{width: 350px;}
 
