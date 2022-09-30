@@ -9,8 +9,16 @@ This project is continuation of [useful-folders](https://github.com/fluentmohesh
 
 ## Installation:
 
-- [Download](https://github.com/fluentmoheshwar/useful-tools/releases/download/v1.0/Useful_Tools_For_Windows_Installer.exe)
+- [Download](https://github.com/fluentmoheshwar/useful-tools/releases/download/latest/Useful_Tools_For_Windows_Installer.exe)
 - winget
 ```powershell
 winget install MoheshwarAmarnathBiswas.UsefulToolsForWindows
 ```
+
+## Stargazers
+
+[![Stargazers repo roster for @fluentmoheshwar/useful-tools](https://reporoster.com/stars/dark/fluentmoheshwar/useful-tools)](https://github.com/fluentmoheshwar/useful-tools/stargazers)
+
+## Forkers
+
+[![Forkers repo roster for @fluentmoheshwar/useful-tools](https://reporoster.com/forks/dark/fluentmoheshwar/useful-tools)](https://github.com/fluentmoheshwar/useful-tools/network/members)
