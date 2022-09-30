@@ -9,7 +9,7 @@ This project is continuation of [useful-folders](https://github.com/fluentmohesh
 
 ## Installation:
 
-- [Download](https://github.com/fluentmoheshwar/useful-tools/releases/download/latest/Useful_Tools_For_Windows_Installer.exe)
+- [Download](https://github.com/fluentmoheshwar/useful-tools/releases/latest)
 - winget
 ```powershell
 winget install MoheshwarAmarnathBiswas.UsefulToolsForWindows
