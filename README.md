@@ -1,6 +1,8 @@
 # Useful Tools for Windows
 
-This project is continuation of [useful-folders](https://github.com/fluentmoheshwar/useful-folders)
+This project is continuation of [useful-folders](https://github.com/fluentmoheshwar/useful-folders)  
+[![CodeQL](https://github.com/fluentmoheshwar/useful-tools/actions/workflows/codeql.yml/badge.svg)](https://github.com/fluentmoheshwar/useful-tools/actions/workflows/codeql.yml)
+[![Pylint](https://github.com/fluentmoheshwar/useful-tools/actions/workflows/pylint.yml/badge.svg)](https://github.com/fluentmoheshwar/useful-tools/actions/workflows/pylint.yml)
 
 ## Installation:
 
