@@ -24,7 +24,7 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Please complete the following information:**
- - OS: [e.g. Windows 11 22H@]
+ - OS: [e.g. Windows 11 22H2]
  - Version [e.g. v1.2]
 
 **Additional context**
