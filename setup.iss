@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Useful Tools for Windows"
-#define MyAppVersion "1.2"
+#define MyAppVersion "1.3"
 #define MyAppPublisher "Moheshwar Amarnath Biswas"
 #define MyAppURL "https://github.com/fluentmoheshwar/useful-tools"
 #define MyAppExeName "Useful Tools for Windows.exe"
@@ -20,10 +20,10 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 DisableProgramGroupPage=yes
-LicenseFile=E:\GitHub\yt-download-py\README.md
+LicenseFile=E:\GitHub\yt-download-py\LICENSE.md
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
-OutputDir=C:\Users\amarn\Desktop\output\U
+OutputDir=C:\Users\amarn\Desktop\output\
 OutputBaseFilename=Useful_Tools_For_Windows_Installer
 Compression=lzma
 SolidCompression=yes
@@ -38,8 +38,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\amarn\Desktop\output\U\Useful Tools for Windows\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\amarn\Desktop\output\U\Useful Tools for Windows\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\amarn\Desktop\output\Useful Tools for Windows\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\amarn\Desktop\output\Useful Tools for Windows\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
