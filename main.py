@@ -59,4 +59,4 @@ def installPowerToys():
 def installSysInternals():
     os.system("winget install --id 9P7KNL5RWT25")
 
-eel.start('index.html', size=(800, 600))
+eel.start('index.html', size=(380, 700))
