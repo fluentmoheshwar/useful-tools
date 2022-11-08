@@ -3,10 +3,12 @@ import os
 
 # Imports eel, a Electron like GUI for Python.
 import eel
+
 eel.init('gui')
 
 # Fixes Chrome not installed.
 import eel.browsers
+
 eel.browsers.set_path('chrome', "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe")
 
 @eel.expose
