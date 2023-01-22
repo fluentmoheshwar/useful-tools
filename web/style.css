@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@layer components {
+    section {
+        @apply grid justify-items-center;
+    }
+    button,
+    a {
+        @apply m-3 block bg-[#5662f6] p-3 text-white hover:bg-[#4752c4];
+    }
+}
