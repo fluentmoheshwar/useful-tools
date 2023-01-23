@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: "./web",
-  build: {
-    outDir: "../tmp/web"
-  }
-})
+    root: "./web",
+    build: {
+        outDir: "../tmp/web",
+    },
+});

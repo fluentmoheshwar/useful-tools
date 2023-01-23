@@ -1,22 +1,22 @@
 {
-  "editor.tabSize": 4,
-  "files.eol": "\r\n",
-  "editor.insertSpaces": true,
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
-  },
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-  "editor.quickSuggestions": {
-    "strings": true,
-    "comments": true,
-    "other": "on"
-  }
+    "editor.tabSize": 4,
+    "files.eol": "\r\n",
+    "editor.insertSpaces": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "editor.quickSuggestions": {
+        "strings": true,
+        "comments": true,
+        "other": "on"
+    }
 }
