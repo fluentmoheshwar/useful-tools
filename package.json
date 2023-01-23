@@ -4,8 +4,10 @@
     "description": "Useful Tools for Windows",
     "main": "index.js",
     "scripts": {
-        "dev": "vite build && copy main.py tmp && cd tmp && python main.py",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build:web": "vite build && copy main.py tmp && copy icon.ico tmp",
+        "dev": "pnpm build:web && cd tmp && python main.py",
+        "build:exe": "pnpm build:web && cd tmp && pyinstaller --noconfirm --onedir --windowed --icon icon.ico --name \"Useful Tools for Windows\" --uac-admin --add-data \"web;web/\" main.py && pyinstaller --noconfirm --onefile --windowed --icon icon.ico --name \"Useful_Tools_for_Windows_Portable\" --uac-admin --add-data \"web;web/\" main.py",
+        "build": "pnpm build:exe && cmd build.bat"
     },
     "keywords": [],
     "author": "Moheshwar Amarnath Biswas",
