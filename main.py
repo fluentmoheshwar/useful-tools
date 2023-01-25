@@ -132,4 +132,9 @@ def wureset():
     os.system("net start msiserver")
 
 
+@eel.expose
+def openGodMode():
+    os.system("explorer.exe shell:::{ed7ba470-8e54-465e-825c-99712043e01c}")
+
+
 eel.start("index.html")
