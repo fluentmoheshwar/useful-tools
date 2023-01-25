@@ -7,7 +7,7 @@
         "build:web": "vite build && copy main.py tmp && copy icon.ico tmp",
         "dev": "pnpm build:web && cd tmp && python main.py",
         "build:exe": "pnpm build:web && cd tmp && pyinstaller --noconfirm --onedir --windowed --icon icon.ico --name \"Useful Tools for Windows\" --uac-admin --add-data \"web;web/\" main.py && pyinstaller --noconfirm --onefile --windowed --icon icon.ico --name \"Useful_Tools_for_Windows_Portable\" --uac-admin --add-data \"web;web/\" main.py",
-        "build": "pnpm build:exe && cmd build.bat"
+        "build": "pnpm build:exe && build.bat"
     },
     "keywords": [],
     "author": "Moheshwar Amarnath Biswas",
