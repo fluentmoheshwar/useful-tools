@@ -6,7 +6,7 @@ This project is continuation of [useful-folders](https://github.com/fluentmohesh
 
 ![useful-tools](https://socialify.git.ci/fluentmoheshwar/useful-tools/image?description=1&font=KoHo&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Dark)
 
-## Installation:
+## Installation
 
 -   [Download](https://github.com/fluentmoheshwar/useful-tools/releases/latest)
 -   winget
@@ -14,6 +14,10 @@ This project is continuation of [useful-folders](https://github.com/fluentmohesh
 ```powershell
 winget install MoheshwarAmarnathBiswas.UsefulToolsForWindows
 ```
+
+## Contributing
+
+See [Contributing Guidelines](https://github.com/fluentmoheshwar/useful-tools/blob/main/CONTRIBUTING.md)
 
 ## Stargazers
 
