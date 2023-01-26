@@ -1,3 +1,9 @@
+# https://stackoverflow.com/a/75242885/18629676
+import sys, io
+
+buffer = io.StringIO()
+sys.stdout = sys.stderr = buffer
+
 # Imports system commands
 import os
 
