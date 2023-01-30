@@ -4,7 +4,7 @@ specifiers:
     autoprefixer: ^10.4.13
     postcss: ^8.4.21
     prettier: ^2.8.3
-    prettier-plugin-tailwindcss: ^0.2.1
+    prettier-plugin-tailwindcss: ^0.2.2
     tailwindcss: ^3.2.4
     vite: ^4.0.4
 
@@ -12,7 +12,7 @@ devDependencies:
     autoprefixer: 10.4.13_postcss@8.4.21
     postcss: 8.4.21
     prettier: 2.8.3
-    prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.3
+    prettier-plugin-tailwindcss: 0.2.2_prettier@2.8.3
     tailwindcss: 3.2.4_postcss@8.4.21
     vite: 4.0.4
 
@@ -367,8 +367,8 @@ packages:
         peerDependencies:
             postcss: ^8.1.0
         dependencies:
-            browserslist: 4.21.4
-            caniuse-lite: 1.0.30001446
+            browserslist: 4.21.5
+            caniuse-lite: 1.0.30001449
             fraction.js: 4.2.0
             normalize-range: 0.1.2
             picocolors: 1.0.0
@@ -394,18 +394,18 @@ packages:
             fill-range: 7.0.1
         dev: true
 
-    /browserslist/4.21.4:
+    /browserslist/4.21.5:
         resolution:
             {
-                integrity: sha512-CBHJJdDmgjl3daYjN5Cp5kbTf1mUhZoS+beLklHIvkOWscs83YAhLlF3Wsh/lciQYAcbBJgTOD44VtG31ZM4Hw==,
+                integrity: sha512-tUkiguQGW7S3IhB7N+c2MV/HZPSCPAAiYBZXLsBhFB/PCy6ZKKsZrmBayHV9fdGV/ARIfJ14NkxKzRDjvp7L6w==,
             }
         engines: { node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7 }
         hasBin: true
         dependencies:
-            caniuse-lite: 1.0.30001446
+            caniuse-lite: 1.0.30001449
             electron-to-chromium: 1.4.284
             node-releases: 2.0.8
-            update-browserslist-db: 1.0.10_browserslist@4.21.4
+            update-browserslist-db: 1.0.10_browserslist@4.21.5
         dev: true
 
     /camelcase-css/2.0.1:
@@ -416,10 +416,10 @@ packages:
         engines: { node: ">= 6" }
         dev: true
 
-    /caniuse-lite/1.0.30001446:
+    /caniuse-lite/1.0.30001449:
         resolution:
             {
-                integrity: sha512-fEoga4PrImGcwUUGEol/PoFCSBnSkA9drgdkxXkJLsUBOnJ8rs3zDv6ApqYXGQFOyMPsjh79naWhF4DAxbF8rw==,
+                integrity: sha512-CPB+UL9XMT/Av+pJxCKGhdx+yg1hzplvFJQlJ2n68PyQGMz9L/E2zCyLdOL8uasbouTUgnPl+y0tccI/se+BEw==,
             }
         dev: true
 
@@ -867,14 +867,57 @@ packages:
             source-map-js: 1.0.2
         dev: true
 
-    /prettier-plugin-tailwindcss/0.2.1_prettier@2.8.3:
+    /prettier-plugin-tailwindcss/0.2.2_prettier@2.8.3:
         resolution:
             {
-                integrity: sha512-aIO8IguumORyRsmT+E7JfJ3A9FEoyhqZR7Au7TBOege3VZkgMvHJMkufeYp4zjnDK2iq4ktkvGMNOQR9T8lisQ==,
+                integrity: sha512-5RjUbWRe305pUpc48MosoIp6uxZvZxrM6GyOgsbGLTce+ehePKNm7ziW2dLG2air9aXbGuXlHVSQQw4Lbosq3w==,
             }
         engines: { node: ">=12.17.0" }
         peerDependencies:
+            "@prettier/plugin-php": "*"
+            "@prettier/plugin-pug": "*"
+            "@shopify/prettier-plugin-liquid": "*"
+            "@shufo/prettier-plugin-blade": "*"
+            "@trivago/prettier-plugin-sort-imports": "*"
             prettier: ">=2.2.0"
+            prettier-plugin-astro: "*"
+            prettier-plugin-css-order: "*"
+            prettier-plugin-import-sort: "*"
+            prettier-plugin-jsdoc: "*"
+            prettier-plugin-organize-attributes: "*"
+            prettier-plugin-organize-imports: "*"
+            prettier-plugin-style-order: "*"
+            prettier-plugin-svelte: "*"
+            prettier-plugin-twig-melody: "*"
+        peerDependenciesMeta:
+            "@prettier/plugin-php":
+                optional: true
+            "@prettier/plugin-pug":
+                optional: true
+            "@shopify/prettier-plugin-liquid":
+                optional: true
+            "@shufo/prettier-plugin-blade":
+                optional: true
+            "@trivago/prettier-plugin-sort-imports":
+                optional: true
+            prettier-plugin-astro:
+                optional: true
+            prettier-plugin-css-order:
+                optional: true
+            prettier-plugin-import-sort:
+                optional: true
+            prettier-plugin-jsdoc:
+                optional: true
+            prettier-plugin-organize-attributes:
+                optional: true
+            prettier-plugin-organize-imports:
+                optional: true
+            prettier-plugin-style-order:
+                optional: true
+            prettier-plugin-svelte:
+                optional: true
+            prettier-plugin-twig-melody:
+                optional: true
         dependencies:
             prettier: 2.8.3
         dev: true
@@ -942,10 +985,10 @@ packages:
         engines: { iojs: ">=1.0.0", node: ">=0.10.0" }
         dev: true
 
-    /rollup/3.10.1:
+    /rollup/3.12.0:
         resolution:
             {
-                integrity: sha512-3Er+yel3bZbZX1g2kjVM+FW+RUWDxbG87fcqFM5/9HbPCTpbVp6JOLn7jlxnNlbu7s/N/uDA4EV/91E2gWnxzw==,
+                integrity: sha512-4MZ8kA2HNYahIjz63rzrMMRvDqQDeS9LoriJvMuV0V6zIGysP36e9t4yObUfwdT9h/szXoHQideICftcdZklWg==,
             }
         engines: { node: ">=14.18.0", npm: ">=8.0.0" }
         hasBin: true
@@ -1025,7 +1068,7 @@ packages:
             is-number: 7.0.0
         dev: true
 
-    /update-browserslist-db/1.0.10_browserslist@4.21.4:
+    /update-browserslist-db/1.0.10_browserslist@4.21.5:
         resolution:
             {
                 integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==,
@@ -1034,7 +1077,7 @@ packages:
         peerDependencies:
             browserslist: ">= 4.21.0"
         dependencies:
-            browserslist: 4.21.4
+            browserslist: 4.21.5
             escalade: 3.1.1
             picocolors: 1.0.0
         dev: true
@@ -1077,7 +1120,7 @@ packages:
             esbuild: 0.16.17
             postcss: 8.4.21
             resolve: 1.22.1
-            rollup: 3.10.1
+            rollup: 3.12.0
         optionalDependencies:
             fsevents: 2.3.2
         dev: true
