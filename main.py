@@ -17,7 +17,7 @@ eel.browsers.set_path(
     "chrome", "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 )
 
-
+# Files and folders
 @eel.expose
 def openHosts():
     os.system(
@@ -70,25 +70,11 @@ def openPSReadLineHistory():
 
 
 @eel.expose
-def installYouTubeDownloader():
-    os.system("winget install MoheshwarAmarnathBiswas.YouTubeVideoDownloader")
-
-
-@eel.expose
-def installPowerToys():
-    os.system("winget install Microsoft.PowerToys")
-
-
-@eel.expose
-def installSysInternals():
-    os.system("winget install --id 9P7KNL5RWT25")
-
-
-@eel.expose
 def openAccountPictures():
     os.system("explorer shell:AccountPictures")
 
 
+# Settings and Utileties
 @eel.expose
 def openFolderOptions():
     os.system("explorer shell:::{6DFD7C5C-2451-11d3-A299-00C04F8EF6AF}")
@@ -120,6 +106,32 @@ def openControlPanel():
 
 
 @eel.expose
+def openGodMode():
+    os.system("explorer.exe shell:::{ed7ba470-8e54-465e-825c-99712043e01c}")
+
+
+# Repair Tools
+@eel.expose
+def shutdown():
+    os.system("shutdown /s /t 0")
+
+
+@eel.expose
+def restart():
+    os.system("shutdown /r /t 0")
+
+
+@eel.expose
+def repairSystemFiles():
+    os.system("sfc /scannow")
+
+
+@eel.expose
+def repairWindowsComponents():
+    os.system("dism /online /cleanup-image /restorehealth")
+
+
+@eel.expose
 def wsreset():
     os.system("start wsreset.exe")
 
@@ -136,28 +148,6 @@ def wureset():
     os.system("net start wuauserv")
     os.system("net start CryptSvc")
     os.system("net start msiserver")
-
-
-@eel.expose
-def openGodMode():
-    os.system("explorer.exe shell:::{ed7ba470-8e54-465e-825c-99712043e01c}")
-
-@eel.expose
-def shutdown():
-    os.system("shutdown /s /t 0")
-
-@eel.expose
-def restart():
-    os.system("shutdown /r /t 0")
-
-@eel.expose
-def repairSystemFiles():
-    os.system("sfc /scannow")
-
-
-@eel.expose
-def repairWindowsComponents():
-    os.system("dism /online /cleanup-image /restorehealth")
 
 
 eel.start("index.html")
