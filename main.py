@@ -142,5 +142,22 @@ def wureset():
 def openGodMode():
     os.system("explorer.exe shell:::{ed7ba470-8e54-465e-825c-99712043e01c}")
 
+@eel.expose
+def shutdown():
+    os.system("shutdown /s /t 0")
+
+@eel.expose
+def restart():
+    os.system("shutdown /r /t 0")
+
+@eel.expose
+def repairSystemFiles():
+    os.system("sfc /scannow")
+
+
+@eel.expose
+def repairWindowsComponents():
+    os.system("dism /online /cleanup-image /restorehealth")
+
 
 eel.start("index.html")
