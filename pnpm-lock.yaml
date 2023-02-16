@@ -3,18 +3,18 @@ lockfileVersion: 5.4
 specifiers:
     autoprefixer: ^10.4.13
     postcss: ^8.4.21
-    prettier: ^2.8.3
-    prettier-plugin-tailwindcss: ^0.2.2
-    tailwindcss: ^3.2.4
-    vite: ^4.0.4
+    prettier: ^2.8.4
+    prettier-plugin-tailwindcss: ^0.2.3
+    tailwindcss: ^3.2.6
+    vite: ^4.1.1
 
 devDependencies:
     autoprefixer: 10.4.13_postcss@8.4.21
     postcss: 8.4.21
-    prettier: 2.8.3
-    prettier-plugin-tailwindcss: 0.2.2_prettier@2.8.3
-    tailwindcss: 3.2.4_postcss@8.4.21
-    vite: 4.0.4
+    prettier: 2.8.4
+    prettier-plugin-tailwindcss: 0.2.3_prettier@2.8.4
+    tailwindcss: 3.2.6_postcss@8.4.21
+    vite: 4.1.1
 
 packages:
     /@esbuild/android-arm/0.16.17:
@@ -368,7 +368,7 @@ packages:
             postcss: ^8.1.0
         dependencies:
             browserslist: 4.21.5
-            caniuse-lite: 1.0.30001449
+            caniuse-lite: 1.0.30001453
             fraction.js: 4.2.0
             normalize-range: 0.1.2
             picocolors: 1.0.0
@@ -402,9 +402,9 @@ packages:
         engines: { node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7 }
         hasBin: true
         dependencies:
-            caniuse-lite: 1.0.30001449
-            electron-to-chromium: 1.4.284
-            node-releases: 2.0.8
+            caniuse-lite: 1.0.30001453
+            electron-to-chromium: 1.4.299
+            node-releases: 2.0.10
             update-browserslist-db: 1.0.10_browserslist@4.21.5
         dev: true
 
@@ -416,10 +416,10 @@ packages:
         engines: { node: ">= 6" }
         dev: true
 
-    /caniuse-lite/1.0.30001449:
+    /caniuse-lite/1.0.30001453:
         resolution:
             {
-                integrity: sha512-CPB+UL9XMT/Av+pJxCKGhdx+yg1hzplvFJQlJ2n68PyQGMz9L/E2zCyLdOL8uasbouTUgnPl+y0tccI/se+BEw==,
+                integrity: sha512-R9o/uySW38VViaTrOtwfbFEiBFUh7ST3uIG4OEymIG3/uKdHDO4xk/FaqfUw0d+irSUyFPy3dZszf9VvSTPnsA==,
             }
         dev: true
 
@@ -474,7 +474,7 @@ packages:
         dependencies:
             acorn-node: 1.8.2
             defined: 1.0.1
-            minimist: 1.2.7
+            minimist: 1.2.8
         dev: true
 
     /didyoumean/1.2.2:
@@ -491,10 +491,10 @@ packages:
             }
         dev: true
 
-    /electron-to-chromium/1.4.284:
+    /electron-to-chromium/1.4.299:
         resolution:
             {
-                integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==,
+                integrity: sha512-lQ7ijJghH6pCGbfWXr6EY+KYCMaRSjgsY925r1p/TlpSfVM1VjHTcn1gAc15VM4uwti283X6QtjPTXdpoSGiZQ==,
             }
         dev: true
 
@@ -699,10 +699,10 @@ packages:
             picomatch: 2.3.1
         dev: true
 
-    /minimist/1.2.7:
+    /minimist/1.2.8:
         resolution:
             {
-                integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==,
+                integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==,
             }
         dev: true
 
@@ -715,10 +715,10 @@ packages:
         hasBin: true
         dev: true
 
-    /node-releases/2.0.8:
+    /node-releases/2.0.10:
         resolution:
             {
-                integrity: sha512-dFSmB8fFHEH/s81Xi+Y/15DQY6VHW81nXRj86EMSL3lmuTmK1e+aT4wrFCkTbm+gSwkw4KpX+rT/pMM2c1mF+A==,
+                integrity: sha512-5GFldHPXVG/YZmFzJvKK2zDSzPKhEp0+ZR5SVaoSag9fsL5YgHbUHDfnG5494ISANDcK4KwPXAx2xqVEydmd7w==,
             }
         dev: true
 
@@ -791,14 +791,14 @@ packages:
             resolve: 1.22.1
         dev: true
 
-    /postcss-js/4.0.0_postcss@8.4.21:
+    /postcss-js/4.0.1_postcss@8.4.21:
         resolution:
             {
-                integrity: sha512-77QESFBwgX4irogGVPgQ5s07vLvFqWr228qZY+w6lW599cRlK/HmnlivnnVUxkjHnCu4J16PDMHcH+e+2HbvTQ==,
+                integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==,
             }
         engines: { node: ^12 || ^14 || >= 16 }
         peerDependencies:
-            postcss: ^8.3.3
+            postcss: ^8.4.21
         dependencies:
             camelcase-css: 2.0.1
             postcss: 8.4.21
@@ -867,13 +867,14 @@ packages:
             source-map-js: 1.0.2
         dev: true
 
-    /prettier-plugin-tailwindcss/0.2.2_prettier@2.8.3:
+    /prettier-plugin-tailwindcss/0.2.3_prettier@2.8.4:
         resolution:
             {
-                integrity: sha512-5RjUbWRe305pUpc48MosoIp6uxZvZxrM6GyOgsbGLTce+ehePKNm7ziW2dLG2air9aXbGuXlHVSQQw4Lbosq3w==,
+                integrity: sha512-s2N5Dh7Ao5KTV1mao5ZBnn8EKtUcDPJEkGViZIjI0Ij9TTI5zgTz4IHOxW33jOdjHKa8CSjM88scelUiC5TNRQ==,
             }
         engines: { node: ">=12.17.0" }
         peerDependencies:
+            "@ianvs/prettier-plugin-sort-imports": "*"
             "@prettier/plugin-php": "*"
             "@prettier/plugin-pug": "*"
             "@shopify/prettier-plugin-liquid": "*"
@@ -890,6 +891,8 @@ packages:
             prettier-plugin-svelte: "*"
             prettier-plugin-twig-melody: "*"
         peerDependenciesMeta:
+            "@ianvs/prettier-plugin-sort-imports":
+                optional: true
             "@prettier/plugin-php":
                 optional: true
             "@prettier/plugin-pug":
@@ -919,13 +922,13 @@ packages:
             prettier-plugin-twig-melody:
                 optional: true
         dependencies:
-            prettier: 2.8.3
+            prettier: 2.8.4
         dev: true
 
-    /prettier/2.8.3:
+    /prettier/2.8.4:
         resolution:
             {
-                integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==,
+                integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==,
             }
         engines: { node: ">=10.13.0" }
         hasBin: true
@@ -985,10 +988,10 @@ packages:
         engines: { iojs: ">=1.0.0", node: ">=0.10.0" }
         dev: true
 
-    /rollup/3.12.0:
+    /rollup/3.15.0:
         resolution:
             {
-                integrity: sha512-4MZ8kA2HNYahIjz63rzrMMRvDqQDeS9LoriJvMuV0V6zIGysP36e9t4yObUfwdT9h/szXoHQideICftcdZklWg==,
+                integrity: sha512-F9hrCAhnp5/zx/7HYmftvsNBkMfLfk/dXUh73hPSM2E3CRgap65orDNJbLetoiUFwSAk6iHPLvBrZ5iHYvzqsg==,
             }
         engines: { node: ">=14.18.0", npm: ">=8.0.0" }
         hasBin: true
@@ -1021,10 +1024,10 @@ packages:
         engines: { node: ">= 0.4" }
         dev: true
 
-    /tailwindcss/3.2.4_postcss@8.4.21:
+    /tailwindcss/3.2.6_postcss@8.4.21:
         resolution:
             {
-                integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==,
+                integrity: sha512-BfgQWZrtqowOQMC2bwaSNe7xcIjdDEgixWGYOd6AL0CbKHJlvhfdbINeAW76l1sO+1ov/MJ93ODJ9yluRituIw==,
             }
         engines: { node: ">=12.13.0" }
         hasBin: true
@@ -1047,7 +1050,7 @@ packages:
             picocolors: 1.0.0
             postcss: 8.4.21
             postcss-import: 14.1.0_postcss@8.4.21
-            postcss-js: 4.0.0_postcss@8.4.21
+            postcss-js: 4.0.1_postcss@8.4.21
             postcss-load-config: 3.1.4_postcss@8.4.21
             postcss-nested: 6.0.0_postcss@8.4.21
             postcss-selector-parser: 6.0.11
@@ -1089,10 +1092,10 @@ packages:
             }
         dev: true
 
-    /vite/4.0.4:
+    /vite/4.1.1:
         resolution:
             {
-                integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==,
+                integrity: sha512-LM9WWea8vsxhr782r9ntg+bhSFS06FJgCvvB0+8hf8UWtvaiDagKYWXndjfX6kGl74keHJUcpzrQliDXZlF5yg==,
             }
         engines: { node: ^14.18.0 || >=16.0.0 }
         hasBin: true
@@ -1120,7 +1123,7 @@ packages:
             esbuild: 0.16.17
             postcss: 8.4.21
             resolve: 1.22.1
-            rollup: 3.12.0
+            rollup: 3.15.0
         optionalDependencies:
             fsevents: 2.3.2
         dev: true
