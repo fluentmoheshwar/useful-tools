@@ -20,6 +20,7 @@ Following dependencies are needed to build this app.
 -   [Python](https://www.python.org/) >= 3.10 (Microsoft Store version will work too)
 -   [Inno Setup](https://jrsoftware.org/isinfo.php) >= 6.2.0 (Not Required for running dev build)
 -   [pnpm](https://pnpm.io/)
+-   [upx](https://upx.github.io/) (optional)
 
 For some reason inno setup don't add itself to path. Add this to path
 `C:\Program Files (x86)\Inno Setup 6`
