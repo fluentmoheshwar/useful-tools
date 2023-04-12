@@ -18,5 +18,16 @@
         "strings": true,
         "comments": true,
         "other": "on"
-    }
+    },
+    "cSpell.words": [
+        "Addins",
+        "catroot",
+        "msiserver",
+        "restorehealth",
+        "scannow",
+        "WINDIR",
+        "wsreset",
+        "wuauserv",
+        "wureset"
+    ]
 }

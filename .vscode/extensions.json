@@ -4,6 +4,7 @@
         "bradlc.vscode-tailwindcss",
         "esbenp.prettier-vscode",
         "ms-python.black-formatter",
-        "chouzz.vscode-innosetup"
+        "chouzz.vscode-innosetup",
+        "streetsidesoftware.code-spell-checker"
     ]
 }

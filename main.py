@@ -17,6 +17,7 @@ eel.browsers.set_path(
     "chrome", "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 )
 
+
 # Files and folders
 @eel.expose
 def openHosts():
@@ -74,7 +75,7 @@ def openAccountPictures():
     os.system("explorer shell:AccountPictures")
 
 
-# Settings and Utileties
+# Settings and Utilities
 @eel.expose
 def openFolderOptions():
     os.system("explorer shell:::{6DFD7C5C-2451-11d3-A299-00C04F8EF6AF}")
