@@ -4,7 +4,7 @@
     "description": "Useful Tools for Windows",
     "scripts": {
         "build:web": "vite build && copy main.py tmp && copy icon.ico tmp",
-        "dev": "pnpm build:web && cd tmp && python main.py",
+        "dev": "nodemon --exec \"pnpm build:web && cd tmp && python main.py\" --watch main.py --watch web/* -e *",
         "build:exe": "pnpm build:web && cd tmp && pyinstaller --noconfirm --onedir --windowed --icon icon.ico --name \"Useful Tools for Windows\" --uac-admin --add-data \"web;web/\" main.py && pyinstaller --noconfirm --onefile --windowed --icon icon.ico --name \"Useful_Tools_for_Windows_Portable\" --uac-admin --add-data \"web;web/\" main.py",
         "build": "pnpm build:exe && build.bat"
     },
@@ -13,6 +13,7 @@
     "license": "MIT",
     "devDependencies": {
         "autoprefixer": "^10.4.13",
+        "nodemon": "^2.0.22",
         "postcss": "^8.4.21",
         "prettier": "^2.8.4",
         "prettier-plugin-tailwindcss": "^0.2.3",
