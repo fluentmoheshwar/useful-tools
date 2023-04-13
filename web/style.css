@@ -17,6 +17,6 @@
     }
     button,
     a {
-        @apply m-3 block bg-[#5662f6] p-3 text-white hover:bg-[#4752c4];
+        @apply m-3 inline rounded-full bg-[#5662f6] p-3 text-white duration-100 hover:bg-[#4752c4];
     }
 }
