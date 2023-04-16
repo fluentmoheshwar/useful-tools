@@ -74,6 +74,10 @@ def openPSReadLineHistory():
 def openAccountPictures():
     os.system("explorer shell:AccountPictures")
 
+@eel.expose
+def openVirtualDisks():
+    os.system("explorer %ProgramData%\Microsoft\Windows\Virtual Hard Disks")
+
 
 # Settings and Utilities
 @eel.expose
