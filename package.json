@@ -1,6 +1,6 @@
 {
     "name": "useful-tools",
-    "version": "1.7",
+    "version": "1.8",
     "description": "Useful Tools for Windows",
     "scripts": {
         "build:web": "vite build && copy main.py tmp && copy icon.ico tmp",

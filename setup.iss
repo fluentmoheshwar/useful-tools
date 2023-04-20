@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Useful Tools for Windows"
-#define MyAppVersion "1.7"
+#define MyAppVersion "1.8"
 #define MyAppPublisher "Moheshwar Amarnath Biswas"
 #define MyAppURL "https://github.com/fluentmoheshwar/useful-tools"
 #define MyAppExeName "Useful Tools For Windows.exe"
@@ -10,7 +10,7 @@
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{EBD52A4F-EEEE-49B3-907E-5DD5DC11F10F}
+AppId={EBD52A4F-EEEE-49B3-907E-5DD5DC11F10F}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
