@@ -42,7 +42,7 @@ pip install wheel
 Then install all dependencies using:
 
 ```powershell
-pip install -r requirements.txt && pnpm install
+pip install -r requirements.txt && npm install
 ```
 
 Running development version:
