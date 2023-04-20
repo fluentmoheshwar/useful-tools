@@ -4,9 +4,9 @@
     "description": "Useful Tools for Windows",
     "scripts": {
         "build:web": "vite build && copy main.py tmp && copy icon.ico tmp",
-        "dev": "nodemon --exec \"pnpm build:web && cd tmp && python main.py\" --watch main.py --watch web/* -e *",
-        "build:exe": "pnpm build:web && cd tmp && pyinstaller --noconfirm --onedir --windowed --icon icon.ico --name \"Useful Tools for Windows\" --uac-admin --add-data \"web;web/\" main.py && pyinstaller --noconfirm --onefile --windowed --icon icon.ico --name \"Useful_Tools_for_Windows_Portable\" --uac-admin --add-data \"web;web/\" main.py",
-        "build": "pnpm build:exe && build.bat"
+        "dev": "nodemon --exec \"npm run build:web && cd tmp && python main.py\" --watch main.py --watch web/* -e *",
+        "build:exe": "npm run build:web && cd tmp && pyinstaller --noconfirm --onedir --windowed --icon icon.ico --name \"Useful Tools for Windows\" --uac-admin --add-data \"web;web/\" main.py && pyinstaller --noconfirm --onefile --windowed --icon icon.ico --name \"Useful_Tools_for_Windows_Portable\" --uac-admin --add-data \"web;web/\" main.py",
+        "build": "npm run build:exe && build.bat"
     },
     "keywords": [],
     "author": "Moheshwar Amarnath Biswas",
