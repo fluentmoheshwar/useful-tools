@@ -19,7 +19,7 @@ pycparser==2.21
 pyinstaller==5.10.1
 pyinstaller-hooks-contrib==2023.2
 pyparsing==3.0.9
-pywin32==305
+pywin32==306
 pywin32-ctypes==0.2.0
 tomli==2.0.1
 whichcraft==0.6.1
