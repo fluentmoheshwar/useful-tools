@@ -48,11 +48,11 @@ pip install -r requirements.txt && pnpm install
 Running development version:
 
 ```powershell
-pnpm dev
+npm run dev
 ```
 
 Building:
 
 ```powershell
-pnpm build
+npm run build
 ```
