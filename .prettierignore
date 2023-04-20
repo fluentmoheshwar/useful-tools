@@ -1,1 +1,5 @@
 .github
+.venv
+node_modules
+tmp
+dist
