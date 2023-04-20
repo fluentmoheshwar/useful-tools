@@ -5,7 +5,7 @@ bottle-websocket==0.2.9
 cffi==1.15.1
 click==8.1.3
 colorama==0.4.6
-Eel==0.15.3
+Eel==0.16.0
 future==0.18.3
 gevent==22.10.2
 gevent-websocket==0.10.1
