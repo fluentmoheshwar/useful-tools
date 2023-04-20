@@ -1,6 +1,6 @@
 altgraph==0.17.3
 black==23.3.0
-bottle==0.12.23
+bottle==0.12.25
 bottle-websocket==0.2.9
 cffi==1.15.1
 click==8.1.3
