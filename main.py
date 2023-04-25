@@ -154,5 +154,9 @@ def wureset():
     os.system("net start CryptSvc")
     os.system("net start msiserver")
 
+@eel.expose
+def restartWinNat():
+    os.system("net stop winnat && net start winnat")
+
 
 eel.start("index.html")
