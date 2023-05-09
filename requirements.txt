@@ -25,3 +25,4 @@ tomli==2.0.1
 whichcraft==0.6.1
 zope.event==4.6
 zope.interface==6.0
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
