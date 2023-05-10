@@ -74,6 +74,7 @@ def openPSReadLineHistory():
 def openAccountPictures():
     os.system("explorer shell:AccountPictures")
 
+
 @eel.expose
 def openVirtualDisks():
     os.system("explorer %ProgramData%\Microsoft\Windows\Virtual Hard Disks")
@@ -153,6 +154,7 @@ def wureset():
     os.system("net start wuauserv")
     os.system("net start CryptSvc")
     os.system("net start msiserver")
+
 
 @eel.expose
 def restartWinNat():
