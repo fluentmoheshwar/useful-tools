@@ -1,4 +1,4 @@
-name: "Prettier"
+name: "Formatting"
 
 on:
     push:
@@ -6,7 +6,7 @@ on:
     schedule:
         - cron: "50 20 * * *"
 jobs:
-    fix:
+    prettier:
         name: Fix formatting issues
         runs-on: windows-latest
         permissions:
@@ -28,6 +28,30 @@ jobs:
 
             - name: runs prettier
               run: npx prettier -w .
+
+            - uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                  commit_message: Prettified Code
+    black:
+        name: Fix formatting issues
+        runs-on: windows-latest
+        permissions:
+            actions: read
+            contents: write
+            security-events: write
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  ref: ${{ github.head_ref }}
+
+            - uses: actions/setup-python@v4
+              with:
+                  python-version: "3.11"
+                  cache: "pip" # caching pip dependencies
+            - run: pip install -r requirements.txt
+
+            - name: runs prettier
+              run: black main.py
 
             - uses: stefanzweifel/git-auto-commit-action@v4
               with:
