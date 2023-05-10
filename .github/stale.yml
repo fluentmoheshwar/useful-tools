@@ -15,5 +15,5 @@ markComment: >
     for your contributions.
 # Comment to post when closing a stale issue.
 closeComment: >
-    This issue has been automatically marked as closed because it has not had
+    This issue has been automatically closed because it has not had
     recent activity. Thank you for your contributions.
