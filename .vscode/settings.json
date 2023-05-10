@@ -34,8 +34,10 @@
         "restorehealth",
         "scannow",
         "tailwindcss",
+        "venv",
         "WINDIR",
         "winnat",
+        "wontfix",
         "wsreset",
         "wuauserv",
         "wureset"
