@@ -7,12 +7,12 @@ sys.stdout = sys.stderr = buffer
 # Imports system commands
 import os
 
-# Imports eel, a Electron like GUI for Python.
+# Imports eel, An Electron like GUI for Python.
 import eel
 
 eel.init("web")
 
-# Fixes Chrome not installed.
+# Replaces Google Chrome with Microsoft Edge.
 eel.browsers.set_path(
     "chrome", "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 )
