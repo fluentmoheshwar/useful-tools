@@ -5,11 +5,10 @@
     "description": "Useful Tools for Windows",
     "scripts": {
         "cleanup": "rmdir tmp /S /Q",
-        "removeDist": "rmdir dist /S /Q",
         "build:web": "vite build && copy main.py tmp && copy icon.ico tmp",
         "dev": "nodemon --exec \"npm run build:web && cd tmp && python main.py\" --watch main.py --watch web/* -e *",
         "build:exe": "npm run build:web && cd tmp && pyinstaller --noconfirm --onedir --windowed --icon icon.ico --name \"Useful Tools for Windows\" --uac-admin --add-data \"web;web/\" main.py && pyinstaller --noconfirm --onefile --windowed --icon icon.ico --name \"Useful_Tools_for_Windows_Portable\" --uac-admin --add-data \"web;web/\" main.py",
-        "build": "npm run cleanup && npm run removeDist && npm run build:exe && build.bat && npm run cleanup"
+        "build": "npm run cleanup && npm run build:exe && build.bat && npm run cleanup"
     },
     "keywords": [],
     "author": "Moheshwar Amarnath Biswas",
