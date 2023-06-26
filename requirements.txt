@@ -20,7 +20,7 @@ pyinstaller==5.13.0
 pyinstaller-hooks-contrib==2023.3
 pyparsing==3.1.0
 pywin32==306
-pywin32-ctypes==0.2.0
+pywin32-ctypes==0.2.1
 tomli==2.0.1
 whichcraft==0.6.1
 zope.event==5.0
