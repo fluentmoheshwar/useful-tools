@@ -79,9 +79,11 @@ def openAccountPictures():
 def openVirtualDisks():
     os.system("explorer %ProgramData%\Microsoft\Windows\Virtual Hard Disks")
 
+
 @eel.expose
 def openApplicationsFolder():
     os.system("explorer shell:AppsFolder")
+
 
 # Settings and Utilities
 @eel.expose
