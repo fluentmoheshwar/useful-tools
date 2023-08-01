@@ -18,7 +18,7 @@ platformdirs==3.10.0
 pycparser==2.21
 pyinstaller==5.13.0
 pyinstaller-hooks-contrib==2023.6
-pyparsing==3.1.0
+pyparsing==3.1.1
 pywin32==306
 pywin32-ctypes==0.2.2
 tomli==2.0.1
