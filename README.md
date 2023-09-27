@@ -14,4 +14,3 @@ winget install MoheshwarAmarnathBiswas.UsefulToolsForWindows
 ## Contributing
 
 See [Contributing Guidelines](https://github.com/fluentmoheshwar/useful-tools/blob/main/CONTRIBUTING.md)
-
