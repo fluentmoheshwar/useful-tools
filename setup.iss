@@ -25,7 +25,7 @@ LicenseFile=.\LICENSE.md
 ;PrivilegesRequired=lowest
 OutputDir=.\dist
 OutputBaseFilename=Useful_Tools_For_Windows_Installer
-Compression=lzma
+Compression=lzma2/ultra64
 SolidCompression=yes
 WizardStyle=modern
 ArchitecturesAllowed=x64
@@ -35,7 +35,7 @@ ArchitecturesInstallIn64BitMode=x64
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Tasks]
-Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
+Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}";
 
 [Files]
 Source: ".\tmp\dist\Useful Tools For Windows\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
