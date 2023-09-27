@@ -3,8 +3,6 @@ name: "Formatting"
 on:
     push:
         branches: ["main"]
-    schedule:
-        - cron: "50 20 * * *"
 jobs:
     formatting:
         name: Fix formatting issues
