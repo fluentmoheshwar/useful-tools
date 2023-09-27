@@ -1,18 +1,13 @@
 # Useful Tools for Windows
 
-This project is continuation of [useful-folders](https://github.com/fluentmoheshwar/useful-folders)
-
-[![CodeQL](https://github.com/fluentmoheshwar/useful-tools/actions/workflows/codeql.yml/badge.svg)](https://github.com/fluentmoheshwar/useful-tools/actions/workflows/codeql.yml)
-[![Formatting](https://github.com/fluentmoheshwar/useful-tools/actions/workflows/formatting.yml/badge.svg)](https://github.com/fluentmoheshwar/useful-tools/actions/workflows/formatting.yml)
-
-![useful-tools](https://socialify.git.ci/fluentmoheshwar/useful-tools/image?description=1&font=KoHo&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=Dark)
+Are you a Windows user who loves to geek out on your computer? Do you want to boost your productivity and impress your friends with some cool tricks and hacks? If so, you need to check out this program! It's a collection of handy tools, scripts and shortcuts that will make your Windows experience more efficient and fun. You can customize your desktop, tweak your settings or access hidden features with ease. You'll be amazed by what you can do with this program!
 
 ## Installation
 
 -   [Download](https://github.com/fluentmoheshwar/useful-tools/releases/latest)
 -   winget
 
-```powershell
+```pwsh
 winget install MoheshwarAmarnathBiswas.UsefulToolsForWindows
 ```
 
@@ -20,10 +15,3 @@ winget install MoheshwarAmarnathBiswas.UsefulToolsForWindows
 
 See [Contributing Guidelines](https://github.com/fluentmoheshwar/useful-tools/blob/main/CONTRIBUTING.md)
 
-## Stargazers
-
-[![Stargazers repo roster for @fluentmoheshwar/useful-tools](https://reporoster.com/stars/dark/fluentmoheshwar/useful-tools)](https://github.com/fluentmoheshwar/useful-tools/stargazers)
-
-## Forkers
-
-[![Forkers repo roster for @fluentmoheshwar/useful-tools](https://reporoster.com/forks/dark/fluentmoheshwar/useful-tools)](https://github.com/fluentmoheshwar/useful-tools/network/members)
