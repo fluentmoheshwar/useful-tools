@@ -148,20 +148,6 @@ def wsreset():
 
 
 @eel.expose
-def wureset():
-    os.system("net stop bits")
-    os.system("net stop wuauserv")
-    os.system("net stop CryptSvc")
-    os.system("net stop msiserver")
-    os.system("rd /q /s %windir%\SoftwareDistribution")
-    os.system("rd /q /s %windir%\system32\catroot2")
-    os.system("net start bits")
-    os.system("net start wuauserv")
-    os.system("net start CryptSvc")
-    os.system("net start msiserver")
-
-
-@eel.expose
 def restartWinNat():
     os.system("net stop winnat && net start winnat")
 
