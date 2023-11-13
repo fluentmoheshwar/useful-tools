@@ -16,7 +16,7 @@ pathspec==0.11.2
 pefile==2023.2.7
 platformdirs==3.11.0
 pycparser==2.21
-pyinstaller==6.1.0
+pyinstaller==6.2.0
 pyinstaller-hooks-contrib==2023.10
 pyparsing==3.1.1
 pywin32==306
