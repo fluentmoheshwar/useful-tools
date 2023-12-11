@@ -12,7 +12,7 @@ gevent-websocket==0.10.1
 greenlet==3.0.1
 mypy-extensions==1.0.0
 packaging==23.2
-pathspec==0.11.2
+pathspec==0.12.1
 pefile==2023.2.7
 platformdirs==4.0.0
 pycparser==2.21
