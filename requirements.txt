@@ -17,7 +17,7 @@ pefile==2023.2.7
 platformdirs==4.1.0
 pycparser==2.21
 pyinstaller==6.3.0
-pyinstaller-hooks-contrib==2023.10
+pyinstaller-hooks-contrib==2023.11
 pyparsing==3.1.1
 pywin32==306
 pywin32-ctypes==0.2.2
