@@ -26,6 +26,7 @@ Following dependencies are needed to build this app.
 -   [Inno Setup](https://jrsoftware.org/isinfo.php) >= 6.2.0
     (only required to build installer)
 -   [upx](https://upx.github.io/) (optional)
+-   [pnpm](https://pnpm.io)
 
 Then create venv using:
 
@@ -48,17 +49,17 @@ pip install wheel
 Then install all dependencies using:
 
 ```powershell
-pip install -r requirements.txt && npm install
+pip install -r requirements.txt && pnpm install
 ```
 
 Running development version:
 
 ```powershell
-npm run dev
+pnpm run dev
 ```
 
 Building:
 
 ```powershell
-npm run build
+pnpm run build
 ```
