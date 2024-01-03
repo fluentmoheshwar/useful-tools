@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2022-2023 Moheshwar Amarnath Biswas
+Copyright (c) 2022-2024 Moheshwar Amarnath Biswas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
