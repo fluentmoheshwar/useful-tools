@@ -1,6 +1,6 @@
 {
     "name": "useful-tools",
-    "version": "2.3",
+    "version": "2.4",
     "type": "module",
     "description": "Useful Tools for Windows",
     "scripts": {
