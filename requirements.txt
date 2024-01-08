@@ -1,6 +1,6 @@
 altgraph==0.17.4
 black==23.12.1
-bottle==0.12.25
+bottle @ git+https://github.com/bottlepy/bottle.git@3fdb8b2a2e0d1641374b53ef2b051fe7f54508b5
 bottle-websocket==0.2.9
 cffi==1.16.0
 click==8.1.7

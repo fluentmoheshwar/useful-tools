@@ -14,7 +14,7 @@ eel.init("web")
 
 # Replaces Google Chrome with Microsoft Edge.
 eel.browsers.set_path(
-    "chrome", "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+    "chrome", "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
 )
 
 
@@ -22,51 +22,51 @@ eel.browsers.set_path(
 @eel.expose
 def openHosts():
     os.system(
-        "attrib -r %WINDIR%\system32\drivers\etc\hosts && start notepad.exe %windir%\system32\drivers\etc\hosts"
+        "attrib -r %WINDIR%\\system32\\drivers\\etc\\hosts && start notepad.exe %windir%\\system32\\drivers\\etc\\hosts"
     )
 
 
 @eel.expose
 def openOfficeAddins():
-    os.system("explorer.exe %AppData%\Microsoft\AddIns")
+    os.system("explorer.exe %AppData%\\Microsoft\\AddIns")
 
 
 @eel.expose
 def openCurrentUserStartMenu():
-    os.system("explorer.exe %AppData%\Microsoft\Windows\Start Menu")
+    os.system("explorer.exe %AppData%\\Microsoft\\Windows\\Start Menu")
 
 
 @eel.expose
 def openAllUserStartMenu():
-    os.system("explorer.exe C:\ProgramData\Microsoft\Windows\Start Menu")
+    os.system("explorer.exe C:\\ProgramData\\Microsoft\\Windows\\Start Menu")
 
 
 @eel.expose
 def openSentTo():
-    os.system("explorer.exe %Appdata%\Microsoft\Windows\SendTo")
+    os.system("explorer.exe %Appdata%\\Microsoft\\Windows\\SendTo")
 
 
 @eel.expose
 def openCurrentUserStartup():
-    os.system("explorer.exe %AppData%\Microsoft\Windows\Start Menu\Programs\Startup")
+    os.system("explorer.exe %AppData%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup")
 
 
 @eel.expose
 def openAllUsersStartup():
     os.system(
-        "explorer.exe C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
+        "explorer.exe C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\StartUp"
     )
 
 
 @eel.expose
 def openWordStartup():
-    os.system("explorer.exe %AppData%\Microsoft\Word\STARTUP")
+    os.system("explorer.exe %AppData%\\Microsoft\\Word\\STARTUP")
 
 
 @eel.expose
 def openPSReadLineHistory():
     os.system(
-        "notepad %AppData%\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt"
+        "notepad %AppData%\\Microsoft\\Windows\\PowerShell\\PSReadLine\\ConsoleHost_history.txt"
     )
 
 
@@ -77,7 +77,7 @@ def openAccountPictures():
 
 @eel.expose
 def openVirtualDisks():
-    os.system("explorer %ProgramData%\Microsoft\Windows\Virtual Hard Disks")
+    os.system("explorer %ProgramData%\\Microsoft\\Windows\\Virtual Hard Disks")
 
 
 @eel.expose
@@ -108,7 +108,7 @@ def openPowerOptions():
 
 @eel.expose
 def openOptionalFeatures():
-    os.system("start %WINDIR%\System32\OptionalFeatures.exe")
+    os.system("start %WINDIR%\\System32\\OptionalFeatures.exe")
 
 
 @eel.expose
