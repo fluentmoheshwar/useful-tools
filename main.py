@@ -48,7 +48,9 @@ def openSentTo():
 
 @eel.expose
 def openCurrentUserStartup():
-    os.system("explorer.exe %AppData%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup")
+    os.system(
+        "explorer.exe %AppData%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup"
+    )
 
 
 @eel.expose
