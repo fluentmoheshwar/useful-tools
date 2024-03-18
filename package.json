@@ -16,7 +16,7 @@
     "devDependencies": {
         "autoprefixer": "^10.4.18",
         "nodemon": "^3.1.0",
-        "postcss": "^8.4.35",
+        "postcss": "^8.4.36",
         "prettier": "^3.2.5",
         "prettier-plugin-tailwindcss": "^0.5.12",
         "tailwindcss": "^3.4.1",
