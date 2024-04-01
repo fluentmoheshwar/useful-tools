@@ -15,7 +15,7 @@ packaging==24.0
 pathspec==0.12.1
 pefile==2023.2.7
 platformdirs==4.2.0
-pycparser==2.21
+pycparser==2.22
 pyinstaller==6.5.0
 pyinstaller-hooks-contrib==2024.3
 pyparsing==3.1.2
