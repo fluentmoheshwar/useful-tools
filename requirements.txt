@@ -14,7 +14,7 @@ mypy-extensions==1.0.0
 packaging==24.0
 pathspec==0.12.1
 pefile==2023.2.7
-platformdirs==4.2.0
+platformdirs==4.2.1
 pycparser==2.22
 pyinstaller==6.6.0
 pyinstaller-hooks-contrib==2024.4
