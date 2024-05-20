@@ -25,4 +25,4 @@ setuptools==69.5.1
 tomli==2.0.1
 whichcraft==0.6.1
 zope.event==5.0
-zope.interface==6.3
+zope.interface==6.4
