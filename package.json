@@ -15,7 +15,7 @@
     "license": "MIT",
     "devDependencies": {
         "autoprefixer": "^10.4.19",
-        "nodemon": "^3.1.0",
+        "nodemon": "^3.1.1",
         "postcss": "^8.4.38",
         "prettier": "^3.2.5",
         "prettier-plugin-tailwindcss": "^0.5.13",
