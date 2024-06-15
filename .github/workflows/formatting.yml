@@ -16,17 +16,8 @@ jobs:
               with:
                   ref: ${{ github.head_ref }}
 
-
-            - name: Install pnpm
-              uses: pnpm/action-setup@v2
-              with:
-                version: latest
-
-            - name: Install Node.js
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 18
-                  cache: pnpm
+            - name: Install bun
+              uses: oven-sh/setup-bun@v1
 
             - uses: actions/setup-python@v4
               with:
@@ -35,10 +26,10 @@ jobs:
             - run: pip install -r requirements.txt
 
             - name: Install dependencies
-              run: pnpm install --frozen-lockfile
+              run: bun install --frozen-lockfile
 
             - name: runs prettier
-              run: npx prettier -w .
+              run: bun run prettier -w .
 
             - name: runs black
               run: black main.py

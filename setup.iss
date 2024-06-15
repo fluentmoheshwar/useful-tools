@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Useful Tools for Windows"
-#define MyAppVersion "2.4"
+#define MyAppVersion "2.5"
 #define MyAppPublisher "Moheshwar Amarnath Biswas"
 #define MyAppURL "https://github.com/fluentmoheshwar/useful-tools"
 #define MyAppExeName "Useful Tools For Windows.exe"
@@ -28,8 +28,8 @@ OutputBaseFilename=Useful_Tools_For_Windows_Installer
 Compression=lzma2/ultra64
 SolidCompression=yes
 WizardStyle=modern
-ArchitecturesAllowed=x64
-ArchitecturesInstallIn64BitMode=x64
+ArchitecturesAllowed=x64compatible
+ArchitecturesInstallIn64BitMode=x64compatible
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"

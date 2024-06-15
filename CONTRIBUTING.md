@@ -18,15 +18,15 @@ work on, you are welcome to open a PR with a fix.
 
 ## Make Changes
 
-Following dependencies are needed to build this app.
+Following dependencies are required to build this app.
 
--   [Node.js](https://nodejs.org/) >= 16
 -   [Python](https://www.python.org/) >= 3.10
-    (Microsoft Store version will work too)
+    (Microsoft Store version will work as well)
 -   [Inno Setup](https://jrsoftware.org/isinfo.php) >= 6.2.0
     (only required to build installer)
 -   [upx](https://upx.github.io/) (optional)
--   [pnpm](https://pnpm.io)
+-   [bun](https://bun.sh)
+-   [uv](https://github.com/astral-sh/uv)
 
 Then create venv using:
 
@@ -40,26 +40,20 @@ Then activate venv using:
 .\.venv\Scripts\Activate.ps1
 ```
 
-Install wheel to avoid errors and get better performance (optional)
-
-```powershell
-pip install wheel
-```
-
 Then install all dependencies using:
 
 ```powershell
-pip install -r requirements.txt && pnpm install
+uv pip install -r requirements.txt && bun install
 ```
 
-Running development version:
+Running development version (UI only):
 
 ```powershell
-pnpm run dev
+bun dev
 ```
 
 Building:
 
 ```powershell
-pnpm run build
+build.bat
 ```
