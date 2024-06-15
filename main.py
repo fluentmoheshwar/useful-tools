@@ -18,11 +18,23 @@ eel.browsers.set_path(
 )
 
 
+# sudo setup
+
+@eel.expose
+def winSudo():
+    os.system("sudo config --enable normal")
+
+
+@eel.expose
+def gsudo():
+    os.system("winget install gerardog.gsudo")
+
+
 # Files and folders
 @eel.expose
 def openHosts():
     os.system(
-        "attrib -r %WINDIR%\\system32\\drivers\\etc\\hosts && start notepad.exe %windir%\\system32\\drivers\\etc\\hosts"
+        "sudo attrib -r %WINDIR%\\system32\\drivers\\etc\\hosts && start notepad.exe %windir%\\system32\\drivers\\etc\\hosts"
     )
 
 
