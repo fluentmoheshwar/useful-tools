@@ -1,21 +1,17 @@
 {
     "name": "useful-tools",
-    "version": "2.4",
+    "version": "2.5",
     "type": "module",
     "description": "Useful Tools for Windows",
     "scripts": {
-        "cleanup": "rmdir tmp /S /Q",
-        "build:web": "vite build && copy main.py tmp && copy icon.ico tmp",
-        "dev": "nodemon --exec \"npm run build:web && cd tmp && python main.py\" --watch main.py --watch web/* -e *",
-        "build:exe": "npm run build:web && cd tmp && pyinstaller --noconfirm --onedir --windowed --icon icon.ico --name \"Useful Tools for Windows\" --uac-admin --add-data \"web;web/\" main.py && pyinstaller --noconfirm --onefile --windowed --icon icon.ico --name \"Useful_Tools_for_Windows_Portable\" --uac-admin --add-data \"web;web/\" main.py",
-        "build": "npm run build:exe && build.bat && npm run cleanup"
+        "build": "vite build",
+        "dev": "vite"
     },
     "keywords": [],
     "author": "Moheshwar Amarnath Biswas",
     "license": "MIT",
     "devDependencies": {
         "autoprefixer": "^10.4.19",
-        "nodemon": "^3.1.0",
         "postcss": "^8.4.38",
         "prettier": "^3.2.5",
         "prettier-plugin-tailwindcss": "^0.5.13",
