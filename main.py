@@ -20,6 +20,7 @@ eel.browsers.set_path(
 
 # sudo setup
 
+
 @eel.expose
 def winSudo():
     os.system("sudo config --enable normal")
