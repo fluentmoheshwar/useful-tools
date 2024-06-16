@@ -4,10 +4,7 @@ winget install --id=JRSoftware.InnoSetup -e -s winget
 echo Installing Dependencies...
 bun install
 pip install uv
-<<<<<<< HEAD
 uv pip install git+https://github.com/bottlepy/bottle.git
-=======
->>>>>>> bdb7cc1b836bd9b62b3477240ad51e8d288758ae
 uv pip install wheel
 uv pip install -r requirements.txt
 echo Building the UI...
