@@ -149,22 +149,22 @@ def restart():
 
 @eel.expose
 def repairSystemFiles():
-    os.system("sfc /scannow")
+    os.system("sudo sfc /scannow")
 
 
 @eel.expose
 def repairWindowsComponents():
-    os.system("dism /online /cleanup-image /restorehealth")
+    os.system("sudo dism /online /cleanup-image /restorehealth")
 
 
 @eel.expose
 def wsreset():
-    os.system("start wsreset.exe")
+    os.system("sudo wsreset.exe")
 
 
 @eel.expose
 def restartWinNat():
-    os.system("net stop winnat && net start winnat")
+    os.system("sudo net stop winnat && sudo net start winnat")
 
 
 eel.start("index.html")
