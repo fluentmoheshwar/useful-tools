@@ -34,4 +34,4 @@ jobs:
           git remote add codeberg git@codeberg.org:fluentmoheshwar/useful-tools.git
 
       - name: Pushes to Codeberg
-        run: git push codeberg
+        run: git pull codeberg && git push codeberg
