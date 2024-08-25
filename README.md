@@ -4,6 +4,7 @@ Are you a Windows user who loves to geek out on your computer? Do you want to bo
 
 [![CodeQL](https://github.com/fluentmoheshwar/useful-tools/actions/workflows/codeql.yml/badge.svg)](https://github.com/fluentmoheshwar/useful-tools/actions/workflows/codeql.yml)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/6844/badge)](https://www.bestpractices.dev/projects/6844)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffluentmoheshwar%2Fuseful-tools.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffluentmoheshwar%2Fuseful-tools?ref=badge_shield)
 
 ## Installation
 
@@ -17,3 +18,7 @@ winget install MoheshwarAmarnathBiswas.UsefulToolsForWindows
 ## Contributing
 
 See [Contributing Guidelines](https://github.com/fluentmoheshwar/useful-tools/blob/main/CONTRIBUTING.md)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffluentmoheshwar%2Fuseful-tools.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffluentmoheshwar%2Fuseful-tools?ref=badge_large)
