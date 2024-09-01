@@ -7,6 +7,9 @@ sys.stdout = sys.stderr = buffer
 # Imports system commands
 import os
 
+# import requests
+import requests
+
 # Imports eel, An Electron like GUI for Python.
 import eel
 
@@ -100,6 +103,13 @@ def openApplicationsFolder():
     os.system("explorer shell:AppsFolder")
 
 
+@eel.expose
+def superGodMode():
+    os.system(
+        'powershell -Command "irm https://raw.githubusercontent.com/ThioJoe/Windows-Super-God-Mode/main/Super_God_Mode.ps1 | iex"'
+    )
+
+
 # Settings and Utilities
 @eel.expose
 def openFolderOptions():
@@ -165,6 +175,17 @@ def wsreset():
 @eel.expose
 def restartWinNat():
     os.system("sudo net stop winnat && sudo net start winnat")
+
+
+@eel.expose
+def fKeySender():
+    response = requests.get(
+        "https://api.github.com/repos/ThioJoe/F-Key-Sender/releases/latest"
+    ).json()
+    url = response["assets"][0]["browser_download_url"]
+    os.system(
+        f"powershell -Command Start-BitsTransfer -Source {url} -Destination $env:TEMP && %TEMP%\\F_Key_Sender.exe"
+    )
 
 
 eel.start("index.html")
