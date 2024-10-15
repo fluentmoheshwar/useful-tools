@@ -1,4 +1,4 @@
-black==24.8.0
+black==24.10.0
 Eel==0.17.0
 pyinstaller==6.10.0
 requests==2.32.3
