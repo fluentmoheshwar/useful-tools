@@ -1,10 +1,3 @@
-# https://stackoverflow.com/a/75242885/18629676
-import platform
-import sys, io
-
-buffer = io.StringIO()
-sys.stdout = sys.stderr = buffer
-
 # Imports system commands
 import os
 
@@ -14,15 +7,13 @@ import requests
 # Imports eel, An Electron like GUI for Python.
 import eel
 
+# Initalizes eel
 eel.init("web")
 
 # sudo setup
-
-
 @eel.expose
 def winSudo():
     os.system("sudo config --enable normal && pause")
-
 
 @eel.expose
 def gsudo():
