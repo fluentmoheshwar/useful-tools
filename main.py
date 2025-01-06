@@ -38,7 +38,7 @@ def gsudo():
 @eel.expose
 def openHosts():
     os.system(
-        "sudo attrib -r %WINDIR%\\system32\\drivers\\etc\\hosts && start notepad.exe %windir%\\system32\\drivers\\etc\\hosts"
+        'sudo cmd.exe /c "attrib -r %WINDIR%\\system32\\drivers\\etc\\hosts && notepad.exe %WINDIR%\\system32\\drivers\\etc\\hosts"'
     )
 
 
