@@ -10,10 +10,12 @@ import eel
 # Initializes eel
 eel.init("web")
 
+
 # sudo setup
 @eel.expose
 def winSudo():
     os.system("sudo config --enable normal && pause")
+
 
 @eel.expose
 def gsudo():
@@ -173,8 +175,10 @@ def fKeySender():
         f"powershell -Command Start-BitsTransfer -Source {url} -Destination $env:TEMP && %TEMP%\\F_Key_Sender.exe"
     )
 
+
 @eel.expose
 def titusWinutil():
     os.system('sudo powershell -Command "irm https://christitus.com/win | iex"')
+
 
 eel.start("index.html", mode="edge")
