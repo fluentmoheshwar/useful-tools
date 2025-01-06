@@ -160,7 +160,7 @@ def wsreset():
 
 @eel.expose
 def restartWinNat():
-    os.system("sudo net stop winnat && sudo net start winnat")
+    os.system('sudo cmd.exe /c "net stop winnat && net start winnat"')
 
 
 @eel.expose
