@@ -7,7 +7,7 @@ import requests
 # Imports eel, An Electron like GUI for Python.
 import eel
 
-# Initalizes eel
+# Initializes eel
 eel.init("web")
 
 # sudo setup
