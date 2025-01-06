@@ -1,4 +1,5 @@
 # https://stackoverflow.com/a/75242885/18629676
+import platform
 import sys, io
 
 buffer = io.StringIO()
@@ -16,9 +17,9 @@ import eel
 eel.init("web")
 
 # Replaces Google Chrome with Microsoft Edge.
-eel.browsers.set_path(
-    "chrome", "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
-)
+# eel.browsers.set_path(
+#     "chrome", "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+# )
 
 
 # sudo setup
@@ -188,4 +189,4 @@ def fKeySender():
     )
 
 
-eel.start("index.html")
+eel.start("index.html", mode="chrome")

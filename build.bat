@@ -12,8 +12,8 @@ bun run build
 copy main.py tmp && copy icon.ico tmp
 echo Building the executable folder...
 cd tmp
-pyinstaller --clean --noconfirm --onedir --windowed --icon icon.ico --name "Useful Tools for Windows" --add-data "web;web/" main.py
-pyinstaller --clean --noconfirm --onefile --windowed --icon icon.ico --name "Useful_Tools_for_Windows_Portable" --add-data "web;web/" main.py
+python -m eel main.py web --clean --noconfirm --onedir --windowed --icon icon.ico --name "Useful Tools for Windows"
+python -m eel main.py web --clean --noconfirm --onefile --windowed --icon icon.ico --name "Useful_Tools_for_Windows_Portable
 cd ..
 echo Building the installer...
 "%ProgramFiles(x86)%\Inno Setup 6\ISCC.exe" setup.iss
