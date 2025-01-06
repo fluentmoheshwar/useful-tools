@@ -106,7 +106,7 @@ def openApplicationsFolder():
 @eel.expose
 def superGodMode():
     os.system(
-        'powershell -Command "irm https://raw.githubusercontent.com/ThioJoe/Windows-Super-God-Mode/main/Super_God_Mode.ps1 | iex"'
+        'powershell -Command "irm https://cdn.jsdelivr.net/gh/ThioJoe/Windows-Super-God-Mode@main/Super_God_Mode.ps1 | iex"'
     )
 
 
