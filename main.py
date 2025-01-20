@@ -163,12 +163,12 @@ def restart():
 
 @eel.expose
 def repairSystemFiles():
-    os.system("sudo sfc /scannow")
+    os.system("sudo sfc /scannow && pause")
 
 
 @eel.expose
 def repairWindowsComponents():
-    os.system("sudo dism /online /cleanup-image /restorehealth")
+    os.system("sudo dism /online /cleanup-image /restorehealth && pause")
 
 
 @eel.expose
