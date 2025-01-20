@@ -134,6 +134,22 @@ def openGodMode():
     os.system("explorer.exe shell:::{ed7ba470-8e54-465e-825c-99712043e01c}")
 
 
+@eel.expose
+def fKeySender():
+    response = requests.get(
+        "https://api.github.com/repos/ThioJoe/F-Key-Sender/releases/latest"
+    ).json()
+    url = response["assets"][0]["browser_download_url"]
+    os.system(
+        f"powershell -Command Start-BitsTransfer -Source {url} -Destination $env:TEMP && %TEMP%\\F_Key_Sender.exe"
+    )
+
+
+@eel.expose
+def titusWinutil():
+    os.system('sudo powershell -Command "irm https://christitus.com/win | iex"')
+
+
 # Repair Tools
 @eel.expose
 def shutdown():
@@ -168,22 +184,6 @@ def restartWinNat():
 @eel.expose
 def killNotRespondingApps():
     os.system('sudo taskkill.exe /F /FI "status eq NOT RESPONDING" && pause')
-
-
-@eel.expose
-def fKeySender():
-    response = requests.get(
-        "https://api.github.com/repos/ThioJoe/F-Key-Sender/releases/latest"
-    ).json()
-    url = response["assets"][0]["browser_download_url"]
-    os.system(
-        f"powershell -Command Start-BitsTransfer -Source {url} -Destination $env:TEMP && %TEMP%\\F_Key_Sender.exe"
-    )
-
-
-@eel.expose
-def titusWinutil():
-    os.system('sudo powershell -Command "irm https://christitus.com/win | iex"')
 
 
 eel.start("index.html", mode="edge")
