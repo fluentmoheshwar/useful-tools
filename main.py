@@ -166,6 +166,11 @@ def restartWinNat():
 
 
 @eel.expose
+def killNotRespondingApps():
+    os.system('sudo taskkill.exe /F /FI "status eq NOT RESPONDING" && pause')
+
+
+@eel.expose
 def fKeySender():
     response = requests.get(
         "https://api.github.com/repos/ThioJoe/F-Key-Sender/releases/latest"
