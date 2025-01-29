@@ -13,10 +13,13 @@ copy main.py tmp && copy icon.ico tmp
 echo Building the executable folder...
 cd tmp
 python -m eel main.py web --clean --noconfirm --onedir --windowed --icon icon.ico --name "Useful Tools for Windows"
-python -m eel main.py web --clean --noconfirm --onefile --windowed --icon icon.ico --name "Useful_Tools_for_Windows_Portable
-cd ..
+cd "dist\Useful Tools for Windows\"
+echo Zipping the portable edition...
+7z a -r ..\..\..\dist\Useful_Tools_For_Windows_Portable.zip *
+cd ..\..\..
 echo Building the installer...
 "%ProgramFiles(x86)%\Inno Setup 6\ISCC.exe" setup.iss
 "%LOCALAPPDATA%\Programs\Inno Setup 6\ISCC.exe" setup.iss
-move .\tmp\dist\Useful_Tools_for_Windows_Portable.exe .\dist\Useful_Tools_for_Windows_Portable.exe
+echo Cleaning up...
 rmdir /s /q tmp
+echo Done!
