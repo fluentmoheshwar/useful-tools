@@ -149,6 +149,10 @@ def fKeySender():
 def titusWinutil():
     os.system('sudo powershell -Command "irm https://christitus.com/win | iex"')
 
+@eel.expose
+def dotnetInstaller():
+    os.system('sudo cmd.exe /c "scripts\\dotnet.bat"')
+
 
 # Repair Tools
 @eel.expose
