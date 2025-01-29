@@ -1,0 +1,29 @@
+name: "Build"
+
+on:
+    push:
+        branches: ["main"]
+    pull_request:
+jobs:
+    build:
+        name: Build
+        runs-on: windows-latest
+        permissions:
+            actions: read
+            contents: write
+            security-events: write
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  ref: ${{ github.head_ref }}
+
+            - name: Install bun
+              uses: oven-sh/setup-bun@v1
+
+            - uses: actions/setup-python@v4
+              with:
+                  python-version: "3.13"
+                  cache: "pip" # caching pip dependencies
+
+            - name: Run build
+              run: cmd.exe /c "build.bat"
