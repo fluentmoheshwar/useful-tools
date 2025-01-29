@@ -26,4 +26,4 @@ jobs:
                   cache: "pip" # caching pip dependencies
 
             - name: Run build
-              run: cmd.exe /c "build.bat"
+              run: cmd.exe /c "python -m venv .venv && .venv\Scripts\activate.bat && build.bat"
