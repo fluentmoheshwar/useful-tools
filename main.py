@@ -13,11 +13,6 @@ eel.init("web")
 
 # sudo setup
 @eel.expose
-def winSudo():
-    os.system("sudo config --enable normal && pause")
-
-
-@eel.expose
 def gsudo():
     os.system("winget install gerardog.gsudo")
 
