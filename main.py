@@ -149,6 +149,9 @@ def titusWinutil():
 def dotnetInstaller():
     os.system('sudo cmd.exe /c "scripts\\dotnet.bat"')
 
+@eel.expose
+def updatePrograms():
+    os.system("winget upgrade --all")
 
 # Repair Tools
 @eel.expose
