@@ -185,5 +185,9 @@ def restartWinNat():
 def killNotRespondingApps():
     os.system('sudo taskkill.exe /F /FI "status eq NOT RESPONDING" && pause')
 
+@eel.expose
+def cleanupTempFiles():
+    os.system('sudo cmd /c "scripts\\cleanuptemp.bat"')
+
 
 eel.start("index.html", mode="edge")
