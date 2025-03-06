@@ -20,6 +20,40 @@
     </head>
     <body class="dark:bg-[#36393f] dark:text-white">
         <h1 class="text-center">Useful Tools for Windows</h1>
+
+        <dialog
+            id="dialog"
+            class="dark:bg-[#18191b] dark:text-white shadow-2xl shadow-blue-900 m-auto *:m-5 *:rounded-lg *:text-center"
+        >
+            <div class="grid">
+                <h2>Captive Portal / Public Wi-Fi Login Page</h2>
+                <p>Choose any of these</p>
+                <button><a href="http://neverssl.com">NeverSSL</a></button>
+                <button>
+                    <a href="http://www.msftconnecttest.com/connecttest.txt"
+                        >Microsoft</a
+                    >
+                </button>
+                <button>
+                    <a href="http://connectivitycheck.gstatic.com/generate_204"
+                        >Google</a
+                    >
+                </button>
+                <button><a href="http://captive.apple.com">Apple</a></button>
+                <button>
+                    <a href="http://detectportal.firefox.com/canonical.html"
+                        >Mozilla</a
+                    >
+                </button>
+                <button>
+                    <a href="http://network-test.debian.org/nm">Debian</a>
+                </button>
+                <button onclick="document.getElementById('dialog').close()">
+                    Close
+                </button>
+            </div>
+        </dialog>
+
         <section class="columns-2">
             <h2><kbd>sudo</kbd> is required before using these tools</h2>
             <button onclick="window.location.href = 'ms-settings:developers'">
@@ -100,7 +134,7 @@
                 <button onclick="window.location.href = 'ms-settings:'">
                     Open Settings
                 </button>
-                 <button onclick="eel.openTaskManager();">
+                <button onclick="eel.openTaskManager();">
                     Open Task Manager
                 </button>
                 <button onclick="eel.openTaskManagerEight();">
@@ -109,11 +143,13 @@
                 <button onclick="eel.openTaskManagerXP();">
                     Open Task Manager (Windows XP Style)
                 </button>
-                <button onclick="eel.openmsconfig();">
-                    Open msconfig
-                </button>
+                <button onclick="eel.openmsconfig();">Open msconfig</button>
                 <button onclick="eel.openmsconfigXP();">
                     Open msconfig (Windows XP Style)
+                </button>
+
+                <button onclick="document.getElementById('dialog').showModal()">
+                    Captive Portal / Public Wi-Fi Login Page
                 </button>
                 <button
                     onclick="if(confirm('This tool is provided by ThioJoe, and requires internet connection to work! By continuing you agree to GPL 3.0 License.')) { eel.fKeySender() }"
