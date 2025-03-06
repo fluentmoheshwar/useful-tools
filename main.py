@@ -130,6 +130,31 @@ def openGodMode():
 
 
 @eel.expose
+def openTaskManager():
+    os.system("taskmgr")
+
+
+@eel.expose
+def openTaskManagerEight():
+    os.system("taskmgr -d")
+
+
+@eel.expose
+def openTaskManagerXP():
+    os.system("sudo scripts\\taskmgr.exe")
+
+
+@eel.expose
+def openmsconfig():
+    os.system("msconfig")
+
+
+@eel.expose
+def openmsconfigXP():
+    os.system("sudo scripts\\msconfig.exe")
+
+
+@eel.expose
 def fKeySender():
     response = requests.get(
         "https://api.github.com/repos/ThioJoe/F-Key-Sender/releases/latest"
