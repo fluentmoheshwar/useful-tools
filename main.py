@@ -190,6 +190,10 @@ def shutdown():
 def restart():
     os.system("shutdown /r /t 0")
 
+@eel.expose
+def restartToFirmware():
+    os.system("sudo shutdown /r /fw /t 0")
+
 
 @eel.expose
 def repairSystemFiles():
