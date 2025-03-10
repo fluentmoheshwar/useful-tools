@@ -169,11 +169,19 @@
 
             <section>
                 <h2>Repair tools:</h2>
-                <button onclick="eel.shutdown()">
+                <button onclick="if(confirm('Do you want to shutdown your computer?')){eel.shutdown()}">
                     Shutdown computer without fast startup
                 </button>
-                <button onclick="eel.restart()">Restart Computer</button>
-                <button onclick="eel.restartToFirmware()">Reboot to Firmware (UEFI)</button>
+                <button
+                    onclick="if(confirm('Do you want to reboot your computer?')){eel.restart()}"
+                >
+                    Restart Computer
+                </button>
+                <button
+                    onclick="if(confirm('Do you want to reboot your computer to the firmware (UEFI)?')){eel.restartToFirmware()}"
+                >
+                    Reboot to Firmware (UEFI)
+                </button>
                 <button onclick="eel.repairSystemFiles()">
                     Repair System files
                 </button>
