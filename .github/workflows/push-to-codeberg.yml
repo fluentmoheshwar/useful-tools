@@ -33,5 +33,8 @@ jobs:
           git config --global user.signingkey ~/.ssh/
           git remote add codeberg git@codeberg.org:fluentmoheshwar/useful-tools.git
 
+      - name: Unshallows
+        run: git fetch --unshallow
+
       - name: Pushes to Codeberg
-        run: git pull codeberg && git push codeberg
+        run: git pull codeberg main && git push codeberg
