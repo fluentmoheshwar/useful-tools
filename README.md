@@ -9,7 +9,9 @@ Are you a Windows user who loves to geek out on your computer? Do you want to bo
 
 ## Installation
 
--   [Download](https://github.com/fluentmoheshwar/useful-tools/releases/latest)
+-   [Download from GitHub Releases](https://github.com/fluentmoheshwar/useful-tools/releases/latest)
+-   [Download from Codeberg Releases](https://codeberg.org/fluentmoheshwar/useful-tools/releases/latest) (might be out of date)
+-   [Download from Gitcode Releases](https://gitcode.com/fluentmoheshwar/useful-tools/releases) (might be out of date, recommended for chinese users)
 -   winget
 
 ```pwsh
