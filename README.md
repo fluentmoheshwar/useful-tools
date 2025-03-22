@@ -21,7 +21,3 @@ winget install MoheshwarAmarnathBiswas.UsefulToolsForWindows
 ## Contributing
 
 See [Contributing Guidelines](https://github.com/fluentmoheshwar/useful-tools/blob/main/CONTRIBUTING.md)
-
-## License
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffluentmoheshwar%2Fuseful-tools.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffluentmoheshwar%2Fuseful-tools?ref=badge_large)
