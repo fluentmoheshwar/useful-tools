@@ -20,13 +20,13 @@ work on, you are welcome to open a PR with a fix.
 
 Following dependencies are required to build this app.
 
--   [Python](https://www.python.org/) >= 3.10
-    (Microsoft Store version will work as well)
--   [Inno Setup](https://jrsoftware.org/isinfo.php) >= 6.2.0
-    (only required to build installer)
--   [upx](https://upx.github.io/) (optional)
--   [bun](https://bun.sh)
--   [uv](https://github.com/astral-sh/uv)
+- [Python](https://www.python.org/) >= 3.10
+  (Microsoft Store version will work as well)
+- [Inno Setup](https://jrsoftware.org/isinfo.php) >= 6.2.0
+  (only required to build installer)
+- [upx](https://upx.github.io/) (optional)
+- [bun](https://bun.sh)
+- [uv](https://github.com/astral-sh/uv)
 
 Then create venv using:
 
