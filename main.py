@@ -223,7 +223,7 @@ def killNotRespondingApps():
 
 @eel.expose
 def cleanupTempFiles():
-    os.system('sudo cmd /c "scripts\\cleanuptemp.bat"')
+    os.system("sudo scripts\\cleanuptemp.bat")
 
 
 eel.start("index.html", mode="edge")
