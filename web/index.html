@@ -202,5 +202,35 @@
                 </button>
             </section>
         </div>
+        <script>
+            async function checkForUpdate(currentVersion) {
+                const apiUrl =
+                    "https://api.github.com/repos/fluentmoheshwar/useful-tools/releases/latest";
+
+                try {
+                    const response = await fetch(apiUrl);
+                    if (!response.ok)
+                        throw new Error("GitHub API request failed.");
+
+                    const releaseData = await response.json();
+                    const latestVersion = releaseData.tag_name;
+
+                    if (latestVersion !== currentVersion) {
+                        alert(
+                            `🔔 Update available! Latest version: ${latestVersion}`,
+                        );
+                    } else {
+                        alert("✅ You are up to date.");
+                    }
+                } catch (error) {
+                    console.error(
+                        `❌ Error checking for updates: ${error.message}`,
+                    );
+                }
+            }
+
+            // Example usage:
+            checkForUpdate("v3.5");
+        </script>
     </body>
 </html>
