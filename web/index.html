@@ -157,6 +157,11 @@
                     Open F Key Sender
                 </button>
                 <button
+                    onclick="if(confirm('This tool is provided by ThioJoe, and requires internet connection to work! By continuing you agree to GPL 3.0 License.')) { window.location.href = `https://thiojoe.github.io/Browser-Based-Tools` }"
+                >
+                    Open ThioJoe's Browser-Based-Tools
+                </button>
+                <button
                     onclick="if(confirm('This tool is provided by Chris Titus Tech, and requires internet connection to work! By continuing you agree to MIT License.')) { eel.titusWinutil() }"
                 >
                     Open Chris Titus Tech's Windows Utility
@@ -219,8 +224,6 @@
                         alert(
                             `🔔 Update available! Latest version: ${latestVersion}`,
                         );
-                    } else {
-                        alert("✅ You are up to date.");
                     }
                 } catch (error) {
                     console.error(
