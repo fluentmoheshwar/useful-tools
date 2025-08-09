@@ -1,6 +1,6 @@
 black==25.1.0
 Eel==0.18.2
-pyinstaller==6.14.2
+pyinstaller==6.15.0
 requests==2.32.4
 gevent>=23.9.0 # not directly required, pinned by Snyk to avoid a vulnerability
 setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
