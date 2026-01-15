@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Useful Tools for Windows"
-#define MyAppVersion "3.6"
+#define MyAppVersion "3.7.0"
 #define MyAppPublisher "Moheshwar Amarnath Biswas"
 #define MyAppURL "https://github.com/fluentmoheshwar/useful-tools"
 #define MyAppExeName "Useful Tools For Windows.exe"
@@ -27,7 +27,7 @@ OutputDir=.\dist
 OutputBaseFilename=Useful_Tools_For_Windows_Installer
 Compression=lzma2/ultra64
 SolidCompression=yes
-WizardStyle=modern
+WizardStyle=modern dynamic windows11
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 
