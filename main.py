@@ -212,8 +212,17 @@ def wsreset():
 
 
 @eel.expose
+def flushDNS():
+    os.system("ipconfig /flushdns")
+
+
+@eel.expose
 def restartWinNat():
     os.system('sudo cmd.exe /c "net stop winnat && net start winnat"')
+
+@eel.expose
+def winsockFix():
+    os.system("sudo netsh winsock reset")
 
 
 @eel.expose
