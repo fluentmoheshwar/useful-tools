@@ -220,6 +220,7 @@ def flushDNS():
 def restartWinNat():
     os.system('sudo cmd.exe /c "net stop winnat && net start winnat"')
 
+
 @eel.expose
 def winsockFix():
     os.system("sudo netsh winsock reset")
