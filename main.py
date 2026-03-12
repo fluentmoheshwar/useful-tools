@@ -13,6 +13,7 @@ except Exception:
 
         def expose(self, f: Callable[..., Any] | None = None) -> Any:
             if f is None:
+
                 def _decorator(func: Callable[..., Any]) -> Callable[..., Any]:
                     return func
 
@@ -40,10 +41,12 @@ _real_expose = getattr(eel, "expose", None)
 
 _deferred_expose_registry: List[Callable[..., Any]] = []
 
+
 def _make_deferred_expose(real):
     def expose(func=None):
         # Used both as `@eel.expose` and `eel.expose(func)`.
         if func is None:
+
             def _decorator(f):
                 _deferred_expose_registry.append(f)
                 return f
@@ -53,6 +56,7 @@ def _make_deferred_expose(real):
         return func
 
     return expose
+
 
 # Install the deferred wrapper on eel so existing `@eel.expose` uses it.
 eel.expose = _make_deferred_expose(_real_expose)
@@ -124,7 +128,11 @@ def run_command(
     )
 
 
-def expose_all(module: Optional[ModuleType] = None, include_private: bool = False, exclude: Optional[Union[List[str], Tuple[str, ...]]] = None) -> int:
+def expose_all(
+    module: Optional[ModuleType] = None,
+    include_private: bool = False,
+    exclude: Optional[Union[List[str], Tuple[str, ...]]] = None,
+) -> int:
     """Automatically expose top-level functions from a module to eel.
 
     Args:
@@ -340,7 +348,7 @@ def openmsconfigXP():
 
 
 def fKeySender():
-    import requests # Local import to avoid adding requests as a dependency for the whole app since it's only used in this one function.
+    import requests  # Local import to avoid adding requests as a dependency for the whole app since it's only used in this one function.
 
     response = requests.get(
         "https://api.github.com/repos/ThioJoe/F-Key-Sender/releases/latest"
