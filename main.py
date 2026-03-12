@@ -148,6 +148,9 @@ def openTaskManagerXP():
 def openmsconfig():
     os.system("msconfig")
 
+@eel.expose
+def openPersonalization():
+    os.system("explorer shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}")
 
 @eel.expose
 def openmsconfigXP():
