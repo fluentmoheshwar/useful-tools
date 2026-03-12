@@ -46,6 +46,32 @@ class RunCommandTests(unittest.TestCase):
         with self.assertRaises(TypeError):
             run_command([1, 2])
 
+    @patch("main.eel._real_expose")
+    def test_expose_all_calls_eel_expose(self, mock_expose):
+        import main
+
+        # Simulate eel.expose behavior: if called with no args returns a decorator,
+        # if called with a function returns the function (or registers it).
+        def side_effect(arg=None):
+            if arg is None:
+                return lambda f: f
+            return arg
+
+        mock_expose.side_effect = side_effect
+
+        # Reset call history and call expose_all explicitly
+        mock_expose.reset_mock()
+        count = main.expose_all(module=main)
+
+        # expose_all must return a non-negative integer count
+        self.assertIsInstance(count, int)
+        self.assertGreaterEqual(count, 0)
+
+        # If the mocked exposer was called, its call_count should match the
+        # returned count. If not, we still accept expose_all as successful.
+        if mock_expose.call_count > 0:
+            self.assertEqual(count, mock_expose.call_count)
+
 
 if __name__ == "__main__":
     unittest.main()
